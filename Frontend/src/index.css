@@ -1,1 +1,16 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 @import "tailwindcss";
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+  
+  }
+  h3 {
+    font-family: 'Niconne';
+  
+}
+h2,p{
+  font-family: 'Bona+Nova+SC';
+}
