@@ -68,8 +68,7 @@ body{
   width: 92%;
   margin: 0px 0px 15px 0px;
   padding: 13px;
-  border: 1px solid rgb(9, 87, 46);
-  border-radius: 10px;
+  border-bottom: 2px solid green;
   color: rgb(9, 87, 46);
 }
 .container .form-container .form input:active{

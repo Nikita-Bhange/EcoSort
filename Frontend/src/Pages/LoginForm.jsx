@@ -3,7 +3,8 @@ import React, { useState } from "react"
 export default function LoginForm(){
         const [isLogin, setIsLogin]=useState(true)
     return(
-        <div className='container'>
+       
+        <div className='container '>
             <div className="heading">
                 <h3>EcoSort</h3>
             </div>
@@ -22,15 +23,19 @@ export default function LoginForm(){
                     <p>Not a member? <a href="#" onClick={()=>setIsLogin(false)}>SignUp Now</a></p>
                 </div>
                 </> : <>
-                <div className="form">
+                <div className="form  ">
                     <h2>SignUp Form</h2>
-                    <input type="email" placeholder="Email Address"/>
-                    <input type="password" placeholder="Password"/>
-                    <input type="password" placeholder="Confirm Password"/>
+                    <input  type="email" placeholder="📩 Email Address"/>
+                    <input type="password" placeholder="🔒 Password"/>
+                    <input type="password" placeholder="🔒Confirm Password"/>
                     <button>Sign Up</button>
                 </div>
                 </>}
             </div>
         </div>
+        
     )
 }
+
+
+// bg-gradient-to-r from-[#E9FFDB] via-[#B2EC5D] to-[#00AB66]

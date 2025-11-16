@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-  
+    background: linear-gradient(to right, #E9FFDB, #B2EC5D, #00AB66);
   }
   h3 {
     font-family: 'Niconne';

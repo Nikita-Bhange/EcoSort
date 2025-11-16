@@ -1,26 +1,29 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import './App.css'
-import Navbar from './Components/Navbar'
-import Slider from './Components/Slider'
-import Trysection from './Components/Trysection'
-import Aimsection from './Components/Aimsection'
-import Footer from './Components/Footer'
-/*imported images */
-import image1 from './assets/image1.jpg'
-import image2 from './assets/image2.jpg'
-import image3 from './assets/image3.jpg'
-import image6 from './assets/image6.jpg'
-const images = [image6, image2,image3,image1]
+import Home from './Pages/Home'
+import LoginForm from './Pages/LoginForm'
+
+
 function App() {
   
 
   return (
     <>
-       <Navbar/>
-       <Slider imageUrls={images}/>
-       <Trysection/>
-       <Aimsection/>
-       <Footer/>
+    
+  
+      <Routes>
+        {/* Default route shows Login */}
+        <Route path="/" element={<Navigate to="/LoginForm" />} />
+
+        {/* Login and SignUp routes */}
+        <Route path="/loginform" element={<LoginForm />} />
+
+        <Route path="/home" element={ <Home /> }/>
+
+       
+      </Routes>
+ 
       
     </>
   )
