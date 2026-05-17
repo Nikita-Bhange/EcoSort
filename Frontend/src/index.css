@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 @import "tailwindcss";
 
-body {
+/* body {
     margin: 0;
     font-family: 'Inter', sans-serif;
     background: linear-gradient(to right, #E9FFDB, #B2EC5D, #00AB66);
@@ -13,4 +13,4 @@ body {
 }
 h2,p{
   font-family: 'Bona+Nova+SC';
-}
+} */

@@ -1,28 +1,20 @@
 import React from 'react'
-import Navbar from "../Components/Navbar";
-import Slider from "../Components/Slider";
-import Trysection from "../Components/Trysection";
-import Aimsection from "../Components/Aimsection";
-import Footer from "../Components/Footer";
+import Navbar from '../Components/Navbar'
+import Categories from '../Components/Category'
+import HowItWorks from '../Components/HowitWorks'
+import Footer from '../Components/Footer'
+import HomePage from '../Components/HomePage'
 
-/*imported images */
-import image1 from '../assets/image1.jpg'
-import image2 from '../assets/image2.jpg'
-import image3 from '../assets/image3.jpg'
-import image6 from '../assets/image6.jpg'
-
-const images = [image6, image2,image3,image1]
-
-function Home(){
-    return(
-        <>
-        <Navbar/>
-       <Slider imageUrls={images}/>
-       <Trysection/>
-       <Aimsection/>
-       <Footer/>
-        </>
-    )
+const Home = () => {
+  return (
+    <>
+    <Navbar/>
+    <HomePage/>
+    <Categories/>
+    <HowItWorks/>
+    <Footer/>
+    </>
+  )
 }
 
-export default Home;
+export default Home
